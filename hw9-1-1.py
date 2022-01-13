@@ -1,10 +1,15 @@
 # Author MB 01/10/2022
 
-def double_stuff(lst):
+from http.client import CONTINUE
+
+
+def only_list(lst):
     for i, v in enumerate(lst):
-        if lst[i] %= 2:
+        if i % 2 == 0:
             print(v)
-        else:
-            print(v)
+
+print(only_list(['a', 'b', 'c', 'd', 'e']))
+
+
 
 
